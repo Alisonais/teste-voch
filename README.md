@@ -20,4 +20,14 @@
     php atisan key:generate
     ```
 
+- Executar as migrations
+    ```bash 
+    php artisan migrate
+    ```
+
+- Executar as seeds
+    ```bash 
+    php artisan db:seed
+    ```
+
 
