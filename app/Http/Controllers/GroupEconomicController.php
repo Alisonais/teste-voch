@@ -18,13 +18,11 @@ class GroupEconomicController extends Controller
 
     public function show(GroupEconomic $group): JsonResponse
     {
-        // dd($group);
         return response()->json( $group);
     }
 
     public function store(GroupEconomicRequest $request): JsonResponse
     {
-        // dd($request->name);
         DB::beginTransaction();
 
         try {
@@ -34,14 +32,14 @@ class GroupEconomicController extends Controller
             DB::commit();
 
             return response()->json([
-                'message' => 'usuario cadastrado com sucesso',
+                'message' => 'Grupo Economico cadastrado com sucesso',
                 'data' => $group,
             ],201);
 
         } catch (\Exception $e) {
             DB::rollBack();
             return response()->Json([
-                'message' => 'usuario não cadastrado',
+                'message' => 'Grupo Economico não cadastrado',
                 'error' => $e->getMessage(),
             ], 400);
         }
@@ -60,14 +58,14 @@ class GroupEconomicController extends Controller
             DB::commit();
 
             return response()->json([
-                'message' => 'usuario atualizado com sucesso',
+                'message' => 'Grupo Economico atualizado com sucesso',
                 'data' => $group,
             ],200);
 
         } catch (\Exception $e) {
             DB::rollBack();
             return response()->Json([
-                'message' => 'usuario não atualizado',
+                'message' => 'Grupo Economico não atualizado',
                 'error' => $e->getMessage(),
             ], 400);
         }
@@ -82,13 +80,13 @@ class GroupEconomicController extends Controller
             DB::commit();
 
             return response()->json([
-                'message' => 'usuario deletado com sucesso',
+                'message' => 'Grupo Economico deletado com sucesso',
             ],200);
 
         } catch (\Exception $e) {
             DB::rollBack();
             return response()->Json([
-                'message' => 'usuario não deletado',
+                'message' => 'Grupo Economico não deletado',
                 'error' => $e->getMessage(),
             ], 400);
         }
