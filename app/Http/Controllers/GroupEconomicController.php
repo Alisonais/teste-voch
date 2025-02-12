@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\GroupEconomicRequest;
 use App\Models\GroupEconomic;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class GroupEconomicController extends Controller
