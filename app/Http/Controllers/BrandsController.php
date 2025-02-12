@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\BrandRequest;
 use App\Models\Brands;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class BrandsController extends Controller
@@ -14,6 +13,11 @@ class BrandsController extends Controller
     {
         $brands = Brands::orderBy('id', 'asc')->paginate(10);
         return response()->json($brands);
+    }
+
+    public function show(Brands $brand): JsonResponse
+    {
+        return response()->json($brand);
     }
 
     public function store(BrandRequest $request)
@@ -40,25 +44,19 @@ class BrandsController extends Controller
         }
     }
 
-    public function show(Brands $brands): JsonResponse
-    {
-        dd($brands);
-        return response()->json( $brands);
-    }
-
-    public function update(BrandRequest $request, Brands $brands): JsonResponse
+    public function update(BrandRequest $request, Brands $brand): JsonResponse
     {
         DB::beginTransaction();
 
         try {
-            $brands->update([
+            $brand->update([
                 'name' => $request->name,
             ]);
             DB::commit();
 
             return response()->json([
                 'message' => 'Bandeira atualizado com sucesso',
-                'data' => $brands,
+                'data' => $brand,
             ],200);
 
         } catch (\Exception $e) {
