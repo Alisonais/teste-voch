@@ -1,20 +1,16 @@
 <?php
 
+use App\Http\Controllers\BrandsController;
+use App\Http\Controllers\EmployerController;
 use App\Http\Controllers\GroupEconomicController;
-use App\Models\GroupEconomic;
-use Illuminate\Http\Request;
+use App\Http\Controllers\UnitsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/group',[GroupEconomicController::class, 'index']);
-// get http://localhost:8000/api/group?page=1
+Route::apiResource('group', GroupEconomicController::class);
 
-route::get('/group/{group}',[GroupEconomicController::class, 'show']);
-// get http://localhost:8000/api/group/1
+Route::apiResource('brand', brandsController::class);
 
-route::post('/group',[GroupEconomicController::class, 'store']);
-// post http://localhost:8000/api/group
+Route::apiResource('unit', UnitsController::class);
 
-route::put('/group/{group}',[GroupEconomicController::class, 'update']);
-// put http://localhost:8000/api/group/1
+Route::apiResource('employer', EmployerController::class);
 
-route::delete('/group/{group}',[GroupEconomicController::class, 'destroy']);
