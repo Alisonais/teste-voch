@@ -18,4 +18,14 @@ class GroupEconomic extends Model
     protected $fillable = [
         'name',
     ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<string>
+     */
+    protected $hidden = [
+        'created_at',
+        'updated_at'
+    ];
 }
