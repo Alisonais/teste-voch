@@ -8,6 +8,12 @@
 
 ## Como rodar o projeto:
 
+- clone o projeto:
+
+    ```bash
+    git clone https://github.com/Alisonais/teste-voch.git
+    ```
+
 - Duplique o arquivo .env.exemple, renomeie para .env, altere no .env as credenciais do banco de dados,
 
 - Inatale as dependecias do PHP 
@@ -22,12 +28,8 @@
 
 - Executar as migrations
     ```bash 
-    php artisan migrate
+    php artisan migrate --seed
     ```
 
-- Executar as seeds
-    ```bash 
-    php artisan db:seed
-    ```
 
 
