@@ -1,14 +1,14 @@
 {
   "yaakVersion": "2024.13.0",
   "yaakSchema": 2,
-  "timestamp": "2025-02-10T02:54:09.548498300",
+  "timestamp": "2025-02-13T03:04:32.125256",
   "resources": {
     "workspaces": [
       {
         "model": "workspace",
         "id": "wk_IgPeUnNb1p",
         "createdAt": "2025-02-09T12:39:26",
-        "updatedAt": "2025-02-09T12:41:58",
+        "updatedAt": "2025-02-10T02:54:55",
         "name": "Yaak",
         "description": "",
         "variables": [
@@ -32,9 +32,59 @@
     "folders": [
       {
         "model": "folder",
+        "id": "fl_IF2EAeRT4b",
+        "createdAt": "2025-02-13T01:03:08",
+        "updatedAt": "2025-02-13T01:03:08",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_f4FAnq8oFi",
+        "name": "Report",
+        "sortPriority": -1739408500000.0
+      },
+      {
+        "model": "folder",
+        "id": "fl_RhNAD3LQlw",
+        "createdAt": "2025-02-11T23:44:56",
+        "updatedAt": "2025-02-12T01:55:51",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_f4FAnq8oFi",
+        "name": "Employer",
+        "sortPriority": -1739317400000.0
+      },
+      {
+        "model": "folder",
+        "id": "fl_hOJEMUfYSW",
+        "createdAt": "2025-02-10T23:46:59",
+        "updatedAt": "2025-02-10T23:46:59",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_f4FAnq8oFi",
+        "name": "Units",
+        "sortPriority": -1739231200000.0
+      },
+      {
+        "model": "folder",
+        "id": "fl_yok2My7pA0",
+        "createdAt": "2025-02-10T23:31:08",
+        "updatedAt": "2025-02-10T23:31:08",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_f4FAnq8oFi",
+        "name": "Brands",
+        "sortPriority": -1739230300000.0
+      },
+      {
+        "model": "folder",
+        "id": "fl_nAXBf4E0Nn",
+        "createdAt": "2025-02-10T23:30:46",
+        "updatedAt": "2025-02-10T23:30:46",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_f4FAnq8oFi",
+        "name": "Group Economic",
+        "sortPriority": -1739230300000.0
+      },
+      {
+        "model": "folder",
         "id": "fl_f4FAnq8oFi",
-        "createdAt": "2025-02-09T23:40:28",
-        "updatedAt": "2025-02-09T23:40:53",
+        "createdAt": "2025-02-10T02:54:55",
+        "updatedAt": "2025-02-10T02:54:55",
         "workspaceId": "wk_IgPeUnNb1p",
         "folderId": null,
         "name": "teste-voch",
@@ -44,41 +94,71 @@
     "httpRequests": [
       {
         "model": "http_request",
-        "id": "rq_89xN8G4YMW",
-        "createdAt": "2025-02-10T02:45:11",
-        "updatedAt": "2025-02-10T02:46:12",
+        "id": "rq_dqF5uVevfU",
+        "createdAt": "2025-02-13T02:31:06",
+        "updatedAt": "2025-02-13T02:33:32",
         "workspaceId": "wk_IgPeUnNb1p",
-        "folderId": "fl_f4FAnq8oFi",
+        "folderId": "fl_IF2EAeRT4b",
         "authentication": {},
         "authenticationType": null,
-        "body": {
-          "text": "\n{\n  \"name\": \"daniel roberto\"\n}"
-        },
-        "bodyType": "application/json",
-        "headers": [
-          {
-            "enabled": true,
-            "name": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "method": "DELETE",
-        "name": "apagar",
-        "sortPriority": -1739144400000.0,
-        "url": "${[ htttp ]}/api/group/11",
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "relatório unidades colaboradores",
+        "sortPriority": 1999.9999,
+        "url": "${[ htttp ]}/api/report/units/employers",
         "urlParameters": []
       },
       {
         "model": "http_request",
-        "id": "rq_PxCRKatZKO",
-        "createdAt": "2025-02-10T02:40:53",
-        "updatedAt": "2025-02-10T02:42:33",
+        "id": "rq_vuai8O8dYJ",
+        "createdAt": "2025-02-13T01:03:15",
+        "updatedAt": "2025-02-13T02:32:28",
         "workspaceId": "wk_IgPeUnNb1p",
-        "folderId": "fl_f4FAnq8oFi",
+        "folderId": "fl_IF2EAeRT4b",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "relatório unidade colaboradores",
+        "sortPriority": 1999.9999,
+        "url": "${[ htttp ]}/api/report/unit/employers/2",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_eJX8xFkn8j",
+        "createdAt": "2025-02-12T02:14:12",
+        "updatedAt": "2025-02-12T02:15:18",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_RhNAD3LQlw",
         "authentication": {},
         "authenticationType": null,
         "body": {
-          "text": "\n{\n  \"name\": \"daniel roberto\"\n}"
+          "text": "{\n  \"name\": \"carlos romero\",\n  \"email\": \"carlos@carlos.com\",\n  \"cpf\": 12345678913\n}"
+        },
+        "bodyType": null,
+        "headers": [],
+        "method": "DELETE",
+        "name": "apagar",
+        "sortPriority": 2000.0,
+        "url": "${[ htttp ]}/api/employer/1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_kq2RLmPbOh",
+        "createdAt": "2025-02-12T02:11:21",
+        "updatedAt": "2025-02-12T02:14:24",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_RhNAD3LQlw",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"name\": \"carlos romero\",\n  \"email\": \"carlos@carlos.com\",\n  \"cpf\": 12345678913\n}"
         },
         "bodyType": "application/json",
         "headers": [
@@ -90,21 +170,21 @@
         ],
         "method": "PUT",
         "name": "editar",
-        "sortPriority": -1739144400000.0,
-        "url": "${[ htttp ]}/api/group/1",
+        "sortPriority": 2000.0,
+        "url": "${[ htttp ]}/api/employer/2",
         "urlParameters": []
       },
       {
         "model": "http_request",
-        "id": "rq_MeWwwEGhEc",
-        "createdAt": "2025-02-10T01:53:41",
-        "updatedAt": "2025-02-10T02:41:22",
+        "id": "rq_4aqS9Dc3Ol",
+        "createdAt": "2025-02-12T01:43:58",
+        "updatedAt": "2025-02-12T02:05:21",
         "workspaceId": "wk_IgPeUnNb1p",
-        "folderId": "fl_f4FAnq8oFi",
+        "folderId": "fl_RhNAD3LQlw",
         "authentication": {},
         "authenticationType": null,
         "body": {
-          "text": "{\n  \"name\": \"joão\""
+          "text": "{\n  \"name\": \"alison\",\n  \"email\": \"a@a.com\",\n  \"cpf\": 12345678912\n}"
         },
         "bodyType": "application/json",
         "headers": [
@@ -116,17 +196,17 @@
         ],
         "method": "POST",
         "name": "criar",
-        "sortPriority": -1739144400000.0,
-        "url": "${[ htttp ]}/api/group",
+        "sortPriority": 2000.0,
+        "url": "${[ htttp ]}/api/employer",
         "urlParameters": []
       },
       {
         "model": "http_request",
-        "id": "rq_YBfGDeqPga",
-        "createdAt": "2025-02-10T00:28:20",
-        "updatedAt": "2025-02-10T02:41:08",
+        "id": "rq_Rl1t97WRec",
+        "createdAt": "2025-02-12T01:16:27",
+        "updatedAt": "2025-02-12T01:44:00",
         "workspaceId": "wk_IgPeUnNb1p",
-        "folderId": "fl_f4FAnq8oFi",
+        "folderId": "fl_RhNAD3LQlw",
         "authentication": {},
         "authenticationType": null,
         "body": {},
@@ -134,17 +214,17 @@
         "headers": [],
         "method": "GET",
         "name": "visualizar",
-        "sortPriority": -1739144400000.0,
-        "url": "${[ htttp ]}/api/group/1",
+        "sortPriority": 1000.0,
+        "url": "${[ htttp ]}/api/employer/2",
         "urlParameters": []
       },
       {
         "model": "http_request",
-        "id": "rq_GHAwxgN2KP",
-        "createdAt": "2025-02-09T23:41:14",
-        "updatedAt": "2025-02-10T02:11:10",
+        "id": "rq_i1YAOUcXGW",
+        "createdAt": "2025-02-11T23:45:07",
+        "updatedAt": "2025-02-12T02:14:04",
         "workspaceId": "wk_IgPeUnNb1p",
-        "folderId": "fl_f4FAnq8oFi",
+        "folderId": "fl_RhNAD3LQlw",
         "authentication": {},
         "authenticationType": null,
         "body": {},
@@ -152,8 +232,330 @@
         "headers": [],
         "method": "GET",
         "name": "listar",
-        "sortPriority": -1739144400000.0,
-        "url": "${[ htttp ]}/api/group?page=2",
+        "sortPriority": 0.0,
+        "url": "${[ htttp ]}/api/employer?page=1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_Dqz1DSWzbW",
+        "createdAt": "2025-02-11T01:49:31",
+        "updatedAt": "2025-02-12T00:03:51",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_hOJEMUfYSW",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"trade_name\": \"coxinha de frango\" ,\n  \"cnpj\": 22222222222222,\n  \"corporate_name\": \"frango desfiado\"\n}"
+        },
+        "bodyType": "application/json",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "PUT",
+        "name": "editar",
+        "sortPriority": 2000.0,
+        "url": "${[ htttp ]}/api/unit/1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_OG9zLPujMO",
+        "createdAt": "2025-02-11T01:05:13",
+        "updatedAt": "2025-02-12T00:02:59",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_hOJEMUfYSW",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"trade_name\": \"bolo api resorces\",\n  \"cnpj\": 12345678912345,\n  \"corporate_name\": \"gelado\"\n}"
+        },
+        "bodyType": "application/json",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "name": "criar",
+        "sortPriority": 1500.0,
+        "url": "${[ htttp ]}/api/unit",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_C1t7Vyge0b",
+        "createdAt": "2025-02-11T01:05:13",
+        "updatedAt": "2025-02-12T00:04:02",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_hOJEMUfYSW",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "DELETE",
+        "name": "apagar",
+        "sortPriority": 4000.0,
+        "url": "${[ htttp ]}/api/unit/1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_OfbTphtJsn",
+        "createdAt": "2025-02-11T01:05:03",
+        "updatedAt": "2025-02-12T00:47:38",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_hOJEMUfYSW",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "visualizar",
+        "sortPriority": 1000.0,
+        "url": "${[ htttp ]}/api/unit/2",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_NbdEi0AH5c",
+        "createdAt": "2025-02-11T01:04:59",
+        "updatedAt": "2025-02-12T00:03:31",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_hOJEMUfYSW",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "listar",
+        "sortPriority": 0.0,
+        "url": "${[ htttp ]}/api/unit?page=1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_zZGoD7ruWn",
+        "createdAt": "2025-02-10T23:43:58",
+        "updatedAt": "2025-02-12T00:51:28",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_yok2My7pA0",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": ""
+        },
+        "bodyType": null,
+        "headers": [],
+        "method": "DELETE",
+        "name": "apagar",
+        "sortPriority": 1000.0,
+        "url": "${[ htttp ]}/api/brand/1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_JmmLC0eBkU",
+        "createdAt": "2025-02-10T23:42:20",
+        "updatedAt": "2025-02-12T00:51:37",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_yok2My7pA0",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"name\": \"batatinha quando nasce\"\n}"
+        },
+        "bodyType": "application/json",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "PUT",
+        "name": "editar",
+        "sortPriority": 875.0,
+        "url": "${[ htttp ]}/api/brand/1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_VNL0VC2UWo",
+        "createdAt": "2025-02-10T23:37:48",
+        "updatedAt": "2025-02-12T00:51:35",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_yok2My7pA0",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"name\": \"Jonas api resorces\"\n}"
+        },
+        "bodyType": "application/json",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "name": "criar",
+        "sortPriority": 750.0,
+        "url": "${[ htttp ]}/api/brand",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_SmEBqthB4d",
+        "createdAt": "2025-02-10T23:34:55",
+        "updatedAt": "2025-02-12T00:51:32",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_yok2My7pA0",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "visualizar",
+        "sortPriority": 500.0,
+        "url": "${[ htttp ]}/api/brand/2",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_Rb4OHpF3MN",
+        "createdAt": "2025-02-10T23:31:16",
+        "updatedAt": "2025-02-12T00:51:28",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_yok2My7pA0",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "listar",
+        "sortPriority": 0.0,
+        "url": "${[ htttp ]}/api/brand?page=1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_89xN8G4YMW",
+        "createdAt": "2025-02-10T02:54:55",
+        "updatedAt": "2025-02-11T23:55:10",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_nAXBf4E0Nn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "\n{\n  \"name\": \"daniel roberto\"\n}"
+        },
+        "bodyType": null,
+        "headers": [],
+        "method": "DELETE",
+        "name": "apagar",
+        "sortPriority": 4000.0,
+        "url": "${[ htttp ]}/api/group/10",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_PxCRKatZKO",
+        "createdAt": "2025-02-10T02:54:55",
+        "updatedAt": "2025-02-11T23:54:35",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_nAXBf4E0Nn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "\n{\n  \"name\": \"daniel roberto aditado pelo api resorces \"\n}"
+        },
+        "bodyType": "application/json",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "PUT",
+        "name": "editar",
+        "sortPriority": 3000.0,
+        "url": "${[ htttp ]}/api/group/1",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_MeWwwEGhEc",
+        "createdAt": "2025-02-10T02:54:55",
+        "updatedAt": "2025-02-11T23:53:57",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_nAXBf4E0Nn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"name\": \"joão criado pelo api resources\"\n}"
+        },
+        "bodyType": "application/json",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "name": "criar",
+        "sortPriority": 2000.0,
+        "url": "${[ htttp ]}/api/group",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_YBfGDeqPga",
+        "createdAt": "2025-02-10T02:54:55",
+        "updatedAt": "2025-02-12T00:47:27",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_nAXBf4E0Nn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "visualizar",
+        "sortPriority": 1000.0,
+        "url": "${[ htttp ]}/api/group/2",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_GHAwxgN2KP",
+        "createdAt": "2025-02-10T02:54:55",
+        "updatedAt": "2025-02-11T01:23:08",
+        "workspaceId": "wk_IgPeUnNb1p",
+        "folderId": "fl_nAXBf4E0Nn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "headers": [],
+        "method": "GET",
+        "name": "listar",
+        "sortPriority": 0.0,
+        "url": "${[ htttp ]}/api/group?page=1",
         "urlParameters": []
       }
     ],
