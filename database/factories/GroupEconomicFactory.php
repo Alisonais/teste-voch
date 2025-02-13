@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Brands;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,4 +21,14 @@ class GroupEconomicFactory extends Factory
             'name' => fake()->name(),
         ];
     }
+
+    public function withBrands(int $count = 3): static
+    {
+        return $this->state(function (array $attributes) use ($count) {
+            return [
+                'brands' => Brands::factory()->count($count),
+            ];
+        });
+    }
+
 }

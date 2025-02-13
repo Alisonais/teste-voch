@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Employer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -21,5 +22,14 @@ class UnitsFactory extends Factory
             'corporate_name' => fake()->name(),
             'cnpj' => $this->faker->numberBetween(10000000000000,99999999999999),
         ];
+    }
+
+    public function withEmployers(int $count = 3): static
+    {
+        return $this->state(function (array $attributes) use ($count) {
+            return [
+                'Employers' => Employer::factory()->count($count),
+            ];
+        });
     }
 }

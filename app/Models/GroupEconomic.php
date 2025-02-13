@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class GroupEconomic extends Model
 {
@@ -28,4 +29,9 @@ class GroupEconomic extends Model
         'created_at',
         'updated_at'
     ];
+
+    public function brands(): HasMany
+    {
+        return $this->hasMany(Brands::class, 'group_economic_id');
+    }
 }

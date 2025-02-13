@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Units;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -19,5 +20,14 @@ class BrandsFactory extends Factory
         return [
             'name' => fake()->name(),
         ];
+    }
+
+    public function withUnits(int $count = 3): static
+    {
+        return $this->state(function (array $attributes) use ($count) {
+            return [
+                'Units' => Units::factory()->count($count),
+            ];
+        });
     }
 }

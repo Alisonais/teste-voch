@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('units', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('brands_id')->constrained();
             $table->string('trade_name');
             $table->string('corporate_name');
             $table->bigInteger('cnpj');
